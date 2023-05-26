@@ -1,0 +1,31 @@
+//ATV 1
+
+import java.util.Locale;
+
+public class Atv_1 {
+
+	public static void main(String[] args) {
+String item1 = "computador";
+String item2 = "mouse";
+
+int idade = 18;
+int code = 5290;
+char sexo ='M';
+
+double price1 = 1800.0;
+double price2= 200.0;
+double measure = 53.2380453565;
+
+System.out.println("Produto:");
+System.out.printf("%s, which price is R$ %.2f reais%n",item1,price1);
+System.out.printf("%s, which price is R$ %.2f reais%n",item2,price2);
+System.out.println();
+System.out.printf("Record: %d years old, code %d and gender: %s",idade,code,sexo);
+System.out.println();
+System.out.printf("Measue with eight decimal places: %.8f%n",measure);
+System.out.printf("Rouded(Three decimal places): %.3f%n",measure);
+Locale.setDefault(Locale.US);
+System.out.printf("US Decimal point: %.3f%n",measure);
+	}
+
+}
