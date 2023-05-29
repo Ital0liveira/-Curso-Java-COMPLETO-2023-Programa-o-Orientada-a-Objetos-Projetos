@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Atv_3 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+        int horainic = sc.nextInt();
+        int horafinal = sc.nextInt();
+        
+        int duracao;
+        
+        if (horainic <= horafinal) {
+        	duracao = horafinal - horainic;
+        }
+        else {
+        	duracao= 24 - horafinal + horainic;
+        }
+        System.out.printf("o jogo durou " + duracao + " HORA(S)");
+	    
+		sc.close();
+	}
+		
+}
